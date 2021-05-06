@@ -29,5 +29,5 @@ jobs:
         with:
           name: "Smart Region Spoto 2021"
           path: |
-            "Smart Region Spoto 2021.pdf"
+            "./Smart Region Spoto 2021.pdf"
         if: always()
