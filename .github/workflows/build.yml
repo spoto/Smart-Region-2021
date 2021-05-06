@@ -20,14 +20,14 @@ jobs:
       - name: Compile slides
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: "Smart Region Spoto 2021.tex"
+          root_file: Smart-Region-Spoto-2021.tex
       - name: Check pdf files
         run: |
-          file "Smart Region Spoto 2021.pdf" | grep -q ' PDF '
+          file Smart-Region-Spoto-2021.pdf | grep -q ' PDF '
       - name: Upload
         uses: actions/upload-artifact@v2
         with:
-          name: "Smart Region Spoto 2021"
+          name: Smart-Region-Spoto-2021
           path: |
-            "./Smart Region Spoto 2021.pdf"
+            Smart-Region-Spoto-2021.pdf
         if: always()
